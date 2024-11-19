@@ -587,74 +587,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Transaktionsanfrage",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "acce1941-1b49-4147-8c39-1bfa1feed23e",
-                  "title": "Zahlungsdetails Tampering",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "CVE-2019-14979\ncgi-bin/webscr?cmd=_cart in the WooCommerce PayPal Checkout Payment Gateway plugin 1.6.17 for WordPress allows Parameter Tampering in an amount parameter (such as amount_1), as demonstrated by purchasing an item for lower than the intended price. NOTE: The plugin author states it is true that the amount can be manipulated in the PayPal payment flow. However, the amount is validated against the WooCommerce order total before completing the order, and if it doesn’t match then the order will be left in an “On Hold” state",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": "7.4"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Transaktionsanfrage"
-            ],
-            "id": "b528d7ac-e624-4b26-87f7-5a93bd3922fe",
-            "source": {
-              "cell": "737955b1-eec2-4503-a48f-5ccf93282e3f"
-            },
-            "target": {
-              "cell": "f3fda76a-ca02-4eed-a28f-f3dd374b2be7"
-            },
-            "vertices": [
-              {
-                "x": 620,
-                "y": 800
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -762,6 +694,74 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Transaktionsanfrage",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "acce1941-1b49-4147-8c39-1bfa1feed23e",
+                  "title": "Zahlungsdetails Tampering",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "CVE-2019-14979\ncgi-bin/webscr?cmd=_cart in the WooCommerce PayPal Checkout Payment Gateway plugin 1.6.17 for WordPress allows Parameter Tampering in an amount parameter (such as amount_1), as demonstrated by purchasing an item for lower than the intended price. NOTE: The plugin author states it is true that the amount can be manipulated in the PayPal payment flow. However, the amount is validated against the WooCommerce order total before completing the order, and if it doesn’t match then the order will be left in an “On Hold” state",
+                  "mitigation": "Datenintegrität gewährleisten, Authentifizierung und Autorisierung",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "7.4"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Transaktionsanfrage"
+            ],
+            "id": "b528d7ac-e624-4b26-87f7-5a93bd3922fe",
+            "source": {
+              "cell": "737955b1-eec2-4503-a48f-5ccf93282e3f"
+            },
+            "target": {
+              "cell": "f3fda76a-ca02-4eed-a28f-f3dd374b2be7"
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 800
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Login-Daten",
               "description": "Benutzername und Passwort fließen vom Benutzer zum Webserver",
               "outOfScope": false,
@@ -802,7 +802,17 @@
             "target": {
               "cell": "737955b1-eec2-4503-a48f-5ccf93282e3f"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
