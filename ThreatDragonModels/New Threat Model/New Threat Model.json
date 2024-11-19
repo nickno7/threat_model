@@ -802,17 +802,7 @@
             "target": {
               "cell": "737955b1-eec2-4503-a48f-5ccf93282e3f"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "position": {
