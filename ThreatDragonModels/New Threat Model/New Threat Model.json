@@ -587,7 +587,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -607,12 +608,31 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "acce1941-1b49-4147-8c39-1bfa1feed23e",
+                  "title": "Zahlungsdetails Tampering",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "CVE-2019-14979\ncgi-bin/webscr?cmd=_cart in the WooCommerce PayPal Checkout Payment Gateway plugin 1.6.17 for WordPress allows Parameter Tampering in an amount parameter (such as amount_1), as demonstrated by purchasing an item for lower than the intended price. NOTE: The plugin author states it is true that the amount can be manipulated in the PayPal payment flow. However, the amount is validated against the WooCommerce order total before completing the order, and if it doesn’t match then the order will be left in an “On Hold” state",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "7.4"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Transaktionsanfrage"
@@ -905,6 +925,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
