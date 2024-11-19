@@ -20,7 +20,7 @@
           {
             "position": {
               "x": 700,
-              "y": 420
+              "y": 410
             },
             "size": {
               "width": 120,
@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "03baff0b-11db-4cfe-bfd4-7d371ac9a58f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Webanwendung",
@@ -139,7 +139,7 @@
           {
             "position": {
               "x": 318,
-              "y": 450
+              "y": 440
             },
             "size": {
               "width": 112.5,
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "ad782faf-cbf1-42b0-91fc-7132dad7c858",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -255,7 +255,7 @@
           {
             "position": {
               "x": 1076,
-              "y": 450
+              "y": 440
             },
             "size": {
               "width": 112.5,
@@ -273,6 +273,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -356,7 +357,6 @@
               ]
             },
             "id": "593102a2-c9bd-475f-8e80-96da14b1daef",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Datenbank",
@@ -412,7 +412,7 @@
             "vertices": [
               {
                 "x": 560,
-                "y": 440
+                "y": 430
               }
             ]
           },
@@ -460,7 +460,7 @@
             "vertices": [
               {
                 "x": 560,
-                "y": 520
+                "y": 510
               }
             ]
           },
@@ -508,7 +508,7 @@
             "vertices": [
               {
                 "x": 940,
-                "y": 440
+                "y": 430
               }
             ]
           },
@@ -556,7 +556,7 @@
             "vertices": [
               {
                 "x": 950,
-                "y": 510
+                "y": 500
               }
             ]
           }
